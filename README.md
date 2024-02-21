@@ -11,4 +11,30 @@ Here is a working live demo : https://motionmagicstudios.netlify.app/
 ### Landing Page:
 ![alt text](src/Images/landing_page.PNG)
 
-           -
+### About Page: 
+![alt text](src/Images/about_page.PNG)
+
+### Services Page:
+![alt text](src/Images/services_page.PNG)
+
+### Bookings Page:
+![alt text](src/Images/bookings_page.PNG)
+
+### Contact Page: 
+![alt text](src/Images/contact_page.PNG)
+
+## [Usage](https://github.com/SMGxowa1/HTML-Website)
+
+### Development
+Want to contribute? Great!
+
+To fix a bug or enhance an existing module, follow these steps:
+
+- Fork the repo
+- Create a new branch (`git checkout -b improve-feature`)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (`git commit -am 'Improve feature'`)
+- Push to the branch (`git push origin improve-feature`)
+- Create a Pull Request 
+
