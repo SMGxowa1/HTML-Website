@@ -40,7 +40,7 @@ To fix a bug or enhance an existing module, follow these steps:
 
 ## Built with 
 
--![HTML] (https://www.w3schools.com/html/) 
+-[HTML] (https://www.w3schools.com/html/) 
 
 ## To-do
 - Add CSS for styling.
@@ -49,8 +49,8 @@ To fix a bug or enhance an existing module, follow these steps:
 
 ## Team
 
--![Siyamthanda](https://github.com/SMGxowa1)
--![Aphiwe](https://github.com/AphiweSkeyi00)
--![Yanelisa](https://github.com/Yanelisa1)
--![Anitha](https://github.com/anithasagwityi)
--![Chulumanco](https://github.com/ChulumancoNdela)
+-[Siyamthanda](https://github.com/SMGxowa1)
+-[Aphiwe](https://github.com/AphiweSkeyi00)
+-[Yanelisa](https://github.com/Yanelisa1)
+-[Anitha](https://github.com/anithasagwityi)
+-[Chulumanco](https://github.com/ChulumancoNdela)
