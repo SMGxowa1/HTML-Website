@@ -38,3 +38,19 @@ To fix a bug or enhance an existing module, follow these steps:
 - Push to the branch (`git push origin improve-feature`)
 - Create a Pull Request 
 
+## Built with 
+
+-![HTML] (https://www.w3schools.com/html/) 
+
+## To-do
+- Add CSS for styling.
+- Add JavaScript for functionality.
+- Add a database for information storage.
+
+## Team
+
+-![Siyamthanda](https://github.com/SMGxowa1)
+-![Aphiwe](https://github.com/AphiweSkeyi00)
+-![Yanelisa](https://github.com/Yanelisa1)
+-![Anitha](https://github.com/anithasagwityi)
+-![Chulumanco](https://github.com/ChulumancoNdela)
