@@ -9,6 +9,6 @@ Here is a working live demo : https://motionmagicstudios.netlify.app/
 ## Site
 
 ### Landing Page:
-
+![alt text](src/Images/landing_page.PNG)
 
            -
