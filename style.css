@@ -161,3 +161,18 @@ body{
 .slideshow-container img:nth-child(5) {
     animation-delay: 8s;
 }
+
+/*Form framesSSS*/
+
+.contact {
+  border-radius: 50px;
+  background-color: rgb(141, 134, 134);
+ padding: 100px;
+ width:fit-content; 
+ text-align: center;
+ margin: 0 auto;
+}
+
+.footer{
+  font-size: 12px ;
+}
