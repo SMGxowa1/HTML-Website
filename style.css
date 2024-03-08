@@ -4,8 +4,64 @@ body{
   padding: 10px 100px;
   font-family: "Trirong";
   font-size: 20px;
+  background-image: url('HTML-Website/src/Images/short man.jpg       ');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.nav{
+  background-color: #333;
+  border-bottom: 2px solid #777;
 }
 
+.nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* Style the list items (menu items) */
+
+.nav u li{
+  display: inline;/* Display items horizontally */
+}
+
+/* Style the links (menu items) */
+.nav ul li{
+  display:inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+ color: #333;  /* text color */
+}
+.nav ul li a{
+  color: #fff;
+  font-size: 16px;
+  text-shadow:1px 1px 2px rgba(0,0,0,0.5) ;
+  transition: background-color 0.3s ease;
+}
+
+.nav ul li :hover{
+  background-color: #555;
+}
+
+.nav ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav ul li{
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color:#555;
+}
+
+ /* Change link color on hover */
+
+ nav ul li :hover{
+  background-color: #f0f0f0;/* Background color on hover */
+  color: #555;
+ }
 #logo{
   margin-right: auto;
   width:50px;
@@ -177,4 +233,20 @@ body{
 
 .footer{
   font-size: 12px ;
+}
+.loading-text{
+
+  animation: typing 5s steps(20, end);
+  overflow: hidden;
+  display: inline-block;
+  border-right: .15em solod black;
+  white-space: nowrap;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+@keyframes typing{
+  from{width: 0}
+  to {width: 100%}
 }
