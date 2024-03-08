@@ -4,13 +4,13 @@ body{
   padding: 10px 100px;
   font-family: "Trirong";
   font-size: 20px;
-  background-image: url('HTML-Website/src/Images/short man.jpg       ');
+  background-color: #0e21319f;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .nav{
-  background-color: #333;
+  background-color: #14253b;
   border-bottom: 2px solid #777;
 }
 
@@ -76,6 +76,9 @@ body{
 }
 .links a{
   text-decoration: none;
+}
+img{
+  border-radius: 15px;
 }
 
 
