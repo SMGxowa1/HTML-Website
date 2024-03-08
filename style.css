@@ -2,6 +2,8 @@ body{
   text-align: center;
   margin: 0;
   padding: 10px 100px;
+  font-family: "Trirong";
+  font-size: 20px;
   background-image: url('HTML-Website/src/Images/short man.jpg       ');
   background-size: cover;
   background-position: center;
@@ -218,6 +220,20 @@ body{
     animation-delay: 8s;
 }
 
+/*Form frames*/
+
+.contact {
+  border-radius: 50px;
+  background-color: rgb(141, 134, 134);
+ padding: 100px;
+ width:fit-content; 
+ text-align: center;
+ margin: 0 auto;
+}
+
+.footer{
+  font-size: 12px ;
+}
 .loading-text{
 
   animation: typing 5s steps(20, end);
