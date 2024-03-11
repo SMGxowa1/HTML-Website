@@ -75,17 +75,41 @@ a, a:visited, a:hover, a:active {
   list-style: none;
   display: flex;
 }
-.links{
-  padding-right: 30px;
-}
-.links a{
+a {
+  color: #14253b;
+  text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #14253b;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 img{
   border-radius: 15px;
   display: inline-block;
+  border:  8px solid black;
 
-} 
+}
+.main-section{
+  letter-spacing: 0.10em;
+}
 
 
 .review-card {
@@ -230,7 +254,7 @@ img{
 }
 /* About info */
 .about-info{
-  
+  letter-spacing: 0.10em;
 }
 /*Form frames*/
 
@@ -266,4 +290,5 @@ table{
 }
 th img{
   display: inline-block;
+  border:  10px solid black;
 }
