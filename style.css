@@ -256,11 +256,21 @@ img{
 .about-info{
   letter-spacing: 0.10em;
 }
+
+/* Bookings form */
+.bookings-form{
+  border-radius: 50px;
+  background-color: rgb(209, 209, 209);
+ padding: 100px;
+ width:fit-content; 
+ text-align: center;
+ margin: 0 auto;
+}
 /*Form frames*/
 
 .contact {
   border-radius: 50px;
-  background-color: rgb(141, 134, 134);
+  background-color: rgb(209, 209, 209);
  padding: 100px;
  width:fit-content; 
  text-align: center;
