@@ -4,7 +4,7 @@ body{
   padding: 10px 100px;
   font-family: "Trirong";
   font-size: 20px;
-  background-color: #0e21319f;
+  background-color: bisque;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -83,7 +83,9 @@ a, a:visited, a:hover, a:active {
 }
 img{
   border-radius: 15px;
-}
+  display: inline-block;
+
+} 
 
 
 .review-card {
@@ -226,7 +228,10 @@ img{
 .slideshow-container img:nth-child(5) {
     animation-delay: 8s;
 }
-
+/* About info */
+.about-info{
+  
+}
 /*Form frames*/
 
 .contact {
@@ -238,9 +243,6 @@ img{
  margin: 0 auto;
 }
 
-.footer{
-  font-size: 12px ;
-}
 .loading-text{
 
   animation: typing 5s steps(20, end);
@@ -261,4 +263,7 @@ img{
 /* Services section */
 table{
   display:inline;
+}
+th img{
+  display: inline-block;
 }
