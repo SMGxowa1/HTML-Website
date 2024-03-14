@@ -23,6 +23,8 @@ body{
 
 .nav u li{
   display: inline;/* Display items horizontally */
+  position: fixed;
+
 }
 
 /* Style the links (menu items) */
@@ -47,6 +49,7 @@ a, a:visited, a:hover, a:active {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
 }
 
 .nav ul li{
@@ -54,6 +57,7 @@ a, a:visited, a:hover, a:active {
   padding: 10px 20px;
   text-decoration: none;
   color:#555;
+
 }
 
 #logo{
@@ -324,23 +328,66 @@ input:checked + .slide-container .nav label { display: block; }
 
 /* Bookings form */
 .bookings-form{
+  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: linear-gradient(bottom, #cccccc, #EEEEEE 175px);
   border-radius: 50px;
-  background-color: rgb(209, 209, 209);
- padding: 100px;
- width:fit-content; 
- text-align: center;
- margin: 0 auto;
+  background-color: #d1d1d1;
+  padding: 40px;
+  width:600px; 
+  height: 400px;
+  text-align: center;
+  margin: 0 auto;
 }
 /*Form frames*/
 
 .contact {
+  background: -webkit-linear-gradient(bottom, #cac5c1, #EEEEEE 175px);
+  background: -moz-linear-gradient(bottom, #d4c2b1, #ece2d5 175px);
+  background: linear-gradient(bottom, #cf9e8a, #e4c5ac 175px);
   border-radius: 50px;
-  background-color: rgb(209, 209, 209);
- padding: 100px;
- width:fit-content; 
+ /* background-color: rgb(209, 209, 209);*/
+ padding: 40px;
+ width:600px; 
+ height: 520px;
  text-align: center;
  margin: 0 auto;
+ line-height: 100%;
+
+ textarea {
+  width: 354px;
+  height: 220px;
 }
+ input {
+  margin: 0 auto;
+  width: 375px;
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+ button {
+  width: 100px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #09C;
+  color: #fff;
+  font-family: Tahoma, Geneva, sans-serif;
+  height: 30px;
+  border-radius: 15px;
+  border: 1p solid #999;
+}
+
+input.button:hover {
+  background: #fff;
+  color: #09C;
+}
+}
+
 
 .loading-text{
 
