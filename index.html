@@ -9,7 +9,7 @@
     <title>Motion Magic Studios</title>
     <link rel="logo icon" type="image/x-icon" href="src\favicon_io\favicon.ico" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
 </head>
 
@@ -19,25 +19,20 @@
 <nav>
     <ul class="container">
         <img src="src/Images/logo picture.PNG" alt="motion_magic_logo" id="logo">
-        <li class="links"> <a href="index.html">Home</a> &nbsp; &nbsp;</li>
-        <li class="links"> <a href="about.html">About</a> &nbsp; &nbsp;</li>
-        <li class="links"><a href="services.html">Services</a> &nbsp; &nbsp; </li>
-        <li class="links"><a href="contact.html">Contact</a> &nbsp; &nbsp; </li>
+        <li class="links"> <a href="">Home</a> &nbsp; &nbsp;</li>
+        <li class="links"> <a href="#about">About</a> &nbsp; &nbsp;</li>
+        <li class="links"><a href="#services">Services</a> &nbsp; &nbsp; </li>
+        <li class="links"><a href="#contact">Contact</a> &nbsp; &nbsp; </li>
     </ul>
 </nav>
 
 <!--Main heading-->
 <main class="main-section">
-<h1 class="loading-text"><u>Welcome to Motion Magic Studios</u></h1> <br>
-<!-- <img src="src\Images\landing_img1.jpg"width="410" height="308" alt=""> -->
-<!-- <img src="src/Images/Pic 1.jpg" width="410" height="308" alt="photography-img"> -->
+<h1 class="loading-text">Welcome to Motion Magic Studios</h1> <br>
+
 <p >Motion Magic Studios was founded by Cache Crusaders in 2010. Over the years it has grown into one of the leading photography businesses in Cape Town. The company includes a varying team of videographers, photographer and editors who are highly specialized. We also have a partner network of photographers in most major cities of South Africa. 
 
-    At our studio, we believe in capturing every moment with passion and creativity. From weddings to family portraits, corporate events to commercial projects, we tailor our approach to suit your unique vision.</p>
-<!-- <p>With state-of-the art equipment and a dedication to excellence, we guarantee stunning results that you’ll cherish for a lifetime.  
-    
-    With 13 years of experience in the photography industry, no job is too big or too small for us. We deliver quality and we’re fast! We work as a team in high-pressure situations and always go the extra mile. Ready to create picture-perfect moments for your next event? Contact us to book a shoot or request a quote. Your vision is our priority, and we're here to turn it into reality.</p>
-</p> -->
+ At our studio, we believe in capturing every moment with passion and creativity. From weddings to family portraits, corporate events to commercial projects, we tailor our approach to suit your unique vision.</p>
 
 </p> 
 <!--Landing page images-->
@@ -48,60 +43,218 @@
     <img src="src/Images/picture5.jpeg" width="410" height="308" alt="photography-img">
     <img src="src/Images/Photo.jpg" width="410" height="308" alt="photography-img"><br><br>
 </div>
-<div class="landing-img">
-  <div class="mySlides fade">
-      <img src="src/Images/Pic 1.jpg" alt="slide1">
-  </div>
-  <div class="mySlides fade">
-      <img src="src/Images/Pic 2.jpg" alt="slide2">
-  </div>
-  <div class="mySlides fade">
-      <img src="src/Images/Pic 3.jpg" alt="slide3">
-  </div>
-  <div class="mySlides fade">
-      <img src="src/Images/Pic 4.jpg" alt="slide4">
-  </div>
-  <div class="mySlides fade">
-      <img src="src/Images/Pic 5.jpg" alt="slide5">
-  </div>
-  <div class="mySlides fade">
-      <img src="src/Images/Pic 6.jpg" alt="slide6">
-  </div>
-</div>
-  
 </main>
 
     <!--Reviews section-->
     <section class="reviews">
-        <h1><b>What Our Customers say</b></h1>
-        <figure class="review-card">
-            <figcaption>
-              <blockquote>
-                <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
-              </blockquote>
-              <h3>Wisteria Ravenclaw</h3>
-              <h4>Google Inc.</h4>
-            </figcaption>
-          </figure>
-          <figure class="review-card">
-            <figcaption>
-              <blockquote>
-                <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
-              </blockquote>
-              <h3>Ursula Gurnmeister</h3>
-              <h4>Facebook</h4>
-            </figcaption>
-          </figure>
-          <figure class="review-card">
-            <figcaption>
-              <blockquote>
-                <p>The only skills I have the patience to learn are those that have no real application in life. </p>
-              </blockquote>
-              <h3>Ingredia Nutrisha</h3>
-              <h4>Twitter</h4>
-            </figcaption>
-          </figure>
+        <h3><b>What Our Customers say</b></h3>
+       
+          <div class="carousel">
+            <ul class="slides">
+              <input type="radio" name="radio-buttons" id="img-1" checked />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="src\Images\review_img.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-3" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-2" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+
+              <input type="radio" name="radio-buttons" id="img-2" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="src\Images\review_img1.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-1" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-3" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons" id="img-3" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="src\Images\review_img2.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-2" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-1" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <div class="carousel-dots">
+                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+              </div>
+            </ul>
+          </div>
+        </div>
+         
     </section>
+
+    <!-- About section -->
+    <section id="about">
+      <div class="about-info">
+
+        <h1 class="about-heading">About Us</h1>
+        <h3>Vision</h3>
+      
+        <p>At Motion Magic Studios, our vision is to be the unrivaled architects of visual storytelling, transcending the ordinary and sculpting moments that endure through time. Since our inception in 2010 by Cache Crusaders, we have evolved into one of Cape Town's foremost photography businesses. Our expansive team, comprising highly specialized videographers, photographers, and editors, collaborates seamlessly to weave narratives that resonate with authenticity. </p>
+      
+        <h3>Mission</h3>
+      
+        <p>Our mission is to provide an enjoyable experience in front of the camera as well as timeless photographs that you will treasure for a lifetime.  
+      
+        </p>
+      </div>
+      
+          
+      <!--team members-->
+          <h3>Meet the Team</h3>
+
+
+          <div class="container-members">
+            <div>
+              <div class="content">
+                <h2>Siyamthanda Gxowa</h2>
+                <span>Social Media Manager</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>Anitha Sagwityi</h2>
+                <span>Stylist</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>Aphiwe Skeyi</h2>
+                <span>Graphic Designer</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>Yanelisa Vuza</h2>
+                <span>Editor</span>
+              </div>
+            </div>
+          </div> 
+      
+    </section>
+    <!-- Services section -->
+    <section id="services">
+      <h2 id="Services">Our Services</h2>
+
+    <p>Choose from a wide range of services. </p>
+
+    <h3>Birthdays</h3>
+    <a href="bookings.html"><img src="src/Images/birthday image.jpeg" width="500" height="500" alt="photography-img"></a>
+
+    <table>
+        <tr>
+          <th>Package 1</th>
+          <th>Package 2</th> 
+        </tr>
+        <tr>
+          <td>2 Hours <br>
+              50 Pictures <br>
+              R1500
+          </td> <br><br>
+          <td>5 Hours <br>
+              100 pictures  <br>
+              R4500
+        </td>
+        </tr>
+      </table>
+
+    <h3>Weddings</h3>
+    <a href="bookings.html"><img src="src/Images/wedding image.jpg" width="500" height="500" alt="photography-img"></a>
+    <table>
+        <tr>
+          <th>Package 1</th>
+          <th>Package 2</th> 
+        </tr>
+        <tr>
+          <td>2 Hours <br>
+              50 Pictures <br>
+              R5000
+          </td> <br><br>
+          <td>5 Hours <br>
+              100 pictures  <br>
+              R10000
+        </td>
+        </tr>
+      </table>
+    <h3>Graduations</h3>
+    <a href="bookings.html"><img src="src/Images/graduation image.jpg" width="500" height="500" alt="photography-img"></a>
+    <table>
+        <tr>
+          <th>Package 1</th>
+          <th>Package 2</th> 
+        </tr>
+        <tr>
+          <td>2 Hours <br>
+              50 Pictures <br>
+              R1000
+          </td> <br><br>
+          <td>5 Hours <br>
+              100 pictures  <br>
+              R2500
+        </td>
+        </tr>
+      </table> <br><br>
+
+    </section>
+    
+    <!-- Contact section -->
+    <section id="contact">
+      <h1>Get in Touch!</h1>
+
+  <div class="contact">
+    <form action="contact">
+      <label for="fname">Full name:</label><br>
+      <input type="text" id="fname" name="fname" value="" placeholder="John Doe"><br><br>
+      <label for="number">Phone number:</label><br>
+      <input type="text" id="number" name="number" value="" placeholder="079 252 6339"><br> <br>
+      <label for="fname">More info & any questions:</label><br>
+      <textarea name="message" id="message" style="height:300px" style="width:400px" placeholder="Write something here..."></textarea><br><br>    
+      <input type="submit" value="Submit">
+  </form> 
+   <!-- <form action=""> --> 
+    
+    </div>  <br><br>
+
+    <!--location map-->
+    <h2>Our Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.3015608334836!2d18.4606593!3d-33.933371199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d08518ba1b9%3A0x1398e85e424f762!2s97%20Durham%20Ave%2C%20Salt%20River%2C%20Cape%20Town%2C%207925!5e0!3m2!1sen!2sza!4v1708344356226!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
 
      <!--Footer-->
      <footer>
