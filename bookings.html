@@ -97,29 +97,19 @@
     </tbody>
 </table><br><br>
 <!--Selecting an event-->
-<label for="event">Choose an event:</label>
+
 
 <form class="bookings-form" action="contact">
-    <label for="fname">Full name:</label><br>
-    <input type="text" id="fname" name="fname" value="" placeholder="John Doe"><br><br>
-    <label for="number">Phone number:</label><br>
-    <input type="text" id="number" name="number" value="" placeholder="079 252 6339"><br> <br>
-    <label for="fname">More info & any questions:</label><br>
-    <textarea name="message" id="message" style="height:300px" placeholder="Write something here..."></textarea><br><br>    
-    <input type="submit" value="Submit">
-</form> 
 
+    <label for="event">Choose an event:</label>
+    <select name="event" id="event">
+        <option value="birthday">Birthday</option>
+        <option value="wedding">Wedding</option>
+        <option value="graduation">Graduation</option>
+        <option value="other">Other</option>
+      </select> <br> <br>
 
-
-
-<select name="event" id="event">
-  <option value="birthday">Birthday</option>
-  <option value="wedding">Wedding</option>
-  <option value="graduation">Graduation</option>
-  <option value="other">Other</option>
-</select> <br> <br>
-
-<!--Selecting a package-->
+      <!--Selecting a package-->
 <label for="event">Choose a package:</label>
 <select name="package" id="package">
     <option value="package 1">Package 1</option>
@@ -127,7 +117,7 @@
     <option value="other">Other</option>
   </select> <br> <br>
 
-  <!--Selecting a date-->
+   <!--Selecting a date-->
 <label for="date">Choose a date:</label>
 <select name="date" id="date">
     <option value="1">1</option>
@@ -166,6 +156,8 @@
   </select> <br> <br>
 
   <input type="button" value="Book"><br><br>
+</form> 
+ 
 
     <!--Footer-->
     <footer>
