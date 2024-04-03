@@ -37,10 +37,11 @@
   </style>
 <!--Navbar-->
 
+
 <nav>
     <ul class="container">
         <img src="src/Images/logo picture.PNG" alt="motion_magic_logo" id="logo">
-        <li class="links"> <a href="index.html">Home</a> &nbsp; &nbsp;</li>
+        <li class="links"> <a href="">Home</a> &nbsp; &nbsp;</li>
         <li class="links"> <a href="#about">About</a> &nbsp; &nbsp;</li>
         <li class="links"><a href="#services">Services</a> &nbsp; &nbsp; </li>
         <li class="links"><a href="#contact">Contact</a> &nbsp; &nbsp; </li>
@@ -66,6 +67,30 @@
     <img src="src/Images/Photo.jpg" width="410" height="308" alt="photography-img"><br><br> -->
 </div>
 </main>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
     <!-- About section -->
     <section id="about">
@@ -247,6 +272,11 @@
     <section id="contact">
 
   <div class="contact">
+
+    <h3> Contact Us</h3><br>
+    <p>If you need more information about our services or you would like to enquire about something, feel free to leave your details and we'll 
+      get back to you.
+    </p>
     <form action="contact">
       <h2>Get in Touch!</h2>
     <hr>
@@ -255,7 +285,7 @@
       <label for="number">Phone number:</label><br>
       <input type="text" id="number" name="number" value="" placeholder="079 252 6339"><br> <br>
       <label for="fname">More info & any questions:</label><br>
-      <textarea name="message" id="message" style="height:300px" style="width:400px" placeholder="Write something here..."></textarea><br><br>    
+      <textarea name="message" id="message" style="height:197px" style="width:359px" placeholder="Write something here..."></textarea><br><br>    
       <input type="submit" value="Submit">
   </form> 
    <!-- <form action=""> --> 
@@ -277,6 +307,8 @@
           <input type="email" placeholder="Enter your email">
           <a href="subscribe.html"><button>Subscribe</button></a>
           </form>
+
+          <p>&copy; 2024 Motion Magic Studios. All rights reserved.</p>
           
         <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a> &nbsp; &nbsp; 
         <a href="https://www.instagram.com/motionmagicstudios__/" target="_blank"><i class="fa-brands fa-instagram"></i></a> &nbsp; &nbsp; 

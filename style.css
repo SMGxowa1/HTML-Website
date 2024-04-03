@@ -1,17 +1,24 @@
 body{
   text-align: center;
   margin: 0;
-  padding: 10px 100px;
+  padding: 10px ;
   font-family: "Trirong";
   font-size: 20px;
   background-color: bisque;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  
 }
-.nav{
-  background-color: #14253b;
-  border-bottom: 2px solid #777;
+
+
+nav{
+  position: fixed;
+  top: 0%;
+  background-color: transparent;  
+  opacity: 60%;
+  width: auto;
+  overflow: hidden;
 }
 
 .nav ul{
@@ -340,11 +347,17 @@ input:checked + .slide-container .nav label { display: block; }
   border-radius: 50px;
   background-color: #d1d1d1;
   padding: 40px;
-  width:600px; 
+  width:350px; 
   height: 400px;
   text-align: center;
   margin: 0 auto;
 }
+
+/*Footer*/
+footer{
+  font-size: 10px;
+}
+
 /*Form frames*/
 
 .contact {
@@ -354,15 +367,15 @@ input:checked + .slide-container .nav label { display: block; }
   border-radius: 50px;
  /* background-color: rgb(209, 209, 209);*/
  padding: 40px;
- width:600px; 
- height: 520px;
+ width:450px; 
+ height: 510px;
  text-align: center;
  margin: 0 auto;
  line-height: 100%;
 
  textarea {
-  width: 354px;
-  height: 220px;
+  width: 360px;
+  height: 211px;
 }
  input {
   margin: 0 auto;
