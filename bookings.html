@@ -176,5 +176,20 @@
         <a href="tel:+27672150419"><i class="fa fa-phone" aria-hidden="true"></i></a>   &nbsp; &nbsp;
         <a href="mailto:siyamthandagxowa@capacit.org.za"><i class="fa fa-envelope" aria-hidden="true"></i></a>   &nbsp; &nbsp;
     </footer>
+    <script>
+        // JavaScript to preload high-quality images and display them after loading
+        document.addEventListener("DOMContentLoaded", function() {
+          var images = document.querySelectorAll(".image");
+          images.forEach(function(image) {
+            var highQualitySrc = image.src.replace("thumbnail", "image"); 
+            var highQualityImage = new Image();
+            highQualityImage.onload = function() {
+              image.src = highQualitySrc; 
+              image.style.display = "block"; 
+            };
+            highQualityImage.src = highQualitySrc; 
+          });
+        });
+      </script>
 </body>
 </html>
