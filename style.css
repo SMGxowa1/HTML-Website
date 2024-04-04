@@ -103,7 +103,9 @@ a:hover:after {
   left: 0; 
 }
 img{
-  border-radius: 15px;
+  border-radius: 60%;
+  width: 25%;
+  height: 50%;
   display: inline-block;
   border:  6px solid black;
 
@@ -121,9 +123,12 @@ h1{
 
 
 /* About Section */
-#about{
+/* #about{
   background: rgb(248, 221, 146);
-}
+} */
+/* .home-imgs{
+  border-radius: 50%;
+} */
 
 /* Reviews section */
 .carousel {
@@ -166,7 +171,7 @@ ul.slides input {
   display: block;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 60%;
   top: 0;
   opacity: 0;
   transition: all .7s ease-in-out;
