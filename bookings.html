@@ -24,7 +24,11 @@
 <!--Booking calender-->
 <h1>Book your special day!</h1>
 
-<h2>February 2024</h2><br>
+<p>
+    Please check out our calendar for available dates.
+</p>
+
+<h3>February 2024</h3>
  
 <table>
     <thead>
@@ -95,20 +99,27 @@
             <td><b>6</b></td>
         </tr>
     </tbody>
-</table><br><br>
+</table><br>
 <!--Selecting an event-->
 
 
 <form class="bookings-form" action="contact">
     <h1>Booking</h1>
     <hr>
+
+    <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!--Selecting an event-->
     <label for="event">Choose an event:</label>
     <select name="event" id="event">
         <option value="birthday">Birthday</option>
         <option value="wedding">Wedding</option>
         <option value="graduation">Graduation</option>
         <option value="other">Other</option>
-      </select> <br> <br>
+      </select>
 
       <!--Selecting a package-->
 <label for="event">Choose a package:</label>
@@ -116,10 +127,19 @@
     <option value="package 1">Package 1</option>
     <option value="package 2">Package 2</option>
     <option value="other">Other</option>
-  </select> <br> <br>
+  </select> 
+
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+        <label for="message">Additional Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <button type="submit">Book Now</button>
 
    <!--Selecting a date-->
-<label for="date">Choose a date:</label>
+<!-- <label for="date">Choose a date:</label>
 <select name="date" id="date">
     <option value="1">1</option>
     <option value="2">2</option>
@@ -151,22 +171,24 @@
     <option value="28">28</option>
     <option value="29">29</option>
     <option value="30">30</option>
-    <option value="31">31</option>
+    <option value="31">31</option> 
 
     
-  </select> <br> <br>
+  </select>--> <br> <br>
 
-  <input type="button" value="Book"><br><br>
-</form> 
- 
+  <!-- <input type="button" value="Book">
+</form> <br><br><br>
+  -->
 
     <!--Footer-->
+
+
     <footer>
-        <form>
+         <form>
             <label for="Email">Get our Newsletter</label>
             <input type="email" placeholder="Enter your email">
             <a href="subscribe.html"><button>Subscribe</button></a>
-       </form>
+       </form> 
 
         <p>&copy; 2024 Motion Magic Studios. All rights reserved.</p>
         
@@ -176,5 +198,20 @@
         <a href="tel:+27672150419"><i class="fa fa-phone" aria-hidden="true"></i></a>   &nbsp; &nbsp;
         <a href="mailto:siyamthandagxowa@capacit.org.za"><i class="fa fa-envelope" aria-hidden="true"></i></a>   &nbsp; &nbsp;
     </footer>
+    <script>
+        // JavaScript to preload high-quality images and display them after loading
+        document.addEventListener("DOMContentLoaded", function() {
+          var images = document.querySelectorAll(".image");
+          images.forEach(function(image) {
+            var highQualitySrc = image.src.replace("thumbnail", "image"); 
+            var highQualityImage = new Image();
+            highQualityImage.onload = function() {
+              image.src = highQualitySrc; 
+              image.style.display = "block"; 
+            };
+            highQualityImage.src = highQualitySrc; 
+          });
+        });
+      </script>
 </body>
 </html>
