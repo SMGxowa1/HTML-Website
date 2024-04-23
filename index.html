@@ -246,17 +246,27 @@
     <section id="contact">
 
   <div class="contact">
-    <form action="contact">
-      <h2>Get in Touch!</h2>
-    <hr>
-      <label for="fname">Full name:</label><br>
-      <input type="text" id="fname" name="fname" value="" placeholder="John Doe"><br><br>
-      <label for="number">Phone number:</label><br>
-      <input type="text" id="number" name="number" value="" placeholder="079 252 6339"><br> <br>
-      <label for="fname">More info & any questions:</label><br>
-      <textarea name="message" id="message" style="height:300px" style="width:400px" placeholder="Write something here..."></textarea><br><br>    
-      <input type="submit" value="Submit">
-  </form> 
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+      <!-- Replace with your Access Key -->
+      <input type="hidden" name="access_key" value="7290d954-e99f-487b-89ec-a0c698dd7bc2">
+  
+      <!-- Form Inputs. Each input must have a name="" attribute -->
+      <label for="name">Name</label>
+      <input type="text" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" name="email" required>
+      <label for="message">Your Message</label>
+      <textarea name="message" required></textarea>
+  
+      <!-- hCaptcha Spam Protection -->
+      <div class="h-captcha" data-captcha="true"></div>
+  
+      <button type="submit">Submit Form</button>
+  
+  </form>
+  <!-- Required for hCaptcha -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
    <!-- <form action=""> --> 
     
     </div>  <br><br>

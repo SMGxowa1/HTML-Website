@@ -352,7 +352,7 @@ input:checked + .slide-container .nav label { display: block; }
  height: 520px;
  text-align: center;
  margin: 0 auto;
- line-height: 100%;
+ line-height: 100%;}
 
  textarea {
   width: 354px;
@@ -387,7 +387,6 @@ input.button:hover {
   color: #09C;
 }
 }
-
 
 .loading-text{
 
