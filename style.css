@@ -432,7 +432,6 @@ footer{
  text-align: center;
  margin: 0 auto;
  line-height: 100%;
-}
 
  textarea {
   width: 360px;
@@ -468,7 +467,6 @@ input.button:hover {
   background: #fff;
   color: rgb(205, 208, 209);
 }
-
 
 
 .loading-text{
