@@ -12,6 +12,7 @@ body{
 }
 
 
+
 nav{
   /* position: fixed;
   top: 0%; */
@@ -107,7 +108,7 @@ img{
   width: 25%;
   height: 50%;
   display: inline-block;
-  border:  6px solid black;
+  /*border:  6px solid rgb(0, 0, 0);*/
 
 }
 
@@ -316,8 +317,10 @@ input:checked + .slide-container .nav label { display: block; }
       background: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.676) 0%,
-        rgba(0, 0, 0, 0) 100%
-      );
+        rgba(0, 0, 0, 0) 100%);
+      }
+    
+
       transform: translatey(100%);
       transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
       visibility: hidden;
@@ -341,7 +344,7 @@ input:checked + .slide-container .nav label { display: block; }
       visibility: visible;
     }
   }
-}
+
 
 
 /* Bookings form */
@@ -386,6 +389,7 @@ input[type="text"],
 input[type="email"],
 input[type="date"],
 input[type="time"],
+
  textarea {
 width: 100%; 
   padding: 10px;
@@ -405,7 +409,7 @@ button {
 }
  
 button:hover {
-  background-color: #0056b3;
+  background-color: #6e6e6e91;
 }
 
 
@@ -427,11 +431,13 @@ footer{
  height: 510px;
  text-align: center;
  margin: 0 auto;
- line-height: 100%;}
-
+ line-height: 100%;
+}
  textarea {
   width: 360px;
   height: 211px;
+  margin-left: auto;
+    margin-right: auto;
 }
  input {
   margin: 0 auto;
@@ -444,7 +450,7 @@ footer{
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
- button {
+ /*button {
   width: 100px;
   position: absolute;
   right: 20px;
@@ -455,13 +461,12 @@ footer{
   height: 30px;
   border-radius: 15px;
   border: 1p solid #999;
-}
+}*/
 
 input.button:hover {
   background: #fff;
   color: #09C;
 }
-
 
 .loading-text{
 
@@ -480,7 +485,11 @@ input.button:hover {
   from{width: 0}
   to {width: 100%}
 }
-
+.subscribe button{
+  text-align:center;
+  width: 80px;
+  height: 30px;
+}
 /* Services section */
 table{
   display:inline;

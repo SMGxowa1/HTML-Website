@@ -34,6 +34,19 @@
 #myBtn:hover {
   background-color: #555;
 }
+
+.bg {
+  /* The image used */
+  background-image: url("landing_img1.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
   </style>
 <!--Navbar-->
 
@@ -49,6 +62,7 @@
 </nav>
 
 <!--Main heading-->
+<div class = "bg"></div>
 <main class="main-section">
 <h1 class="loading-text">Welcome to Motion Magic Studios</h1> <br>
 
@@ -73,7 +87,7 @@
     <img src="src/Images/picture5.jpeg" width="410" height="308" alt="photography-img">
     <img src="src/Images/Photo.jpg" width="410" height="308" alt="photography-img"><br><br> -->
 </div>
-</main>
+</main><br><br><br><br>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
@@ -129,7 +143,7 @@ function topFunction() {
             </div>
             <div>
               <div class="content">
-                <h2>Anitha Sagwityi</h2>
+                <h2>Chulumanco Ndela</h2>
                 <span>Stylist</span>
               </div>
             </div>
@@ -275,35 +289,27 @@ function topFunction() {
 
     <!-- Contact section -->
     <section id="contact">
-      <h3> Contact Us</h3><br>
+      <h3> Contact Us</h3>
       <p>If you need more information about our services or you would like to enquire about something, feel free to leave your details and we'll 
         get back to you.
       </p>
   <div class="contact">
 
-    <form action="https://api.web3forms.com/submit" method="POST">
-
-      <!-- Replace with your Access Key -->
-      <input type="hidden" name="access_key" value="7290d954-e99f-487b-89ec-a0c698dd7bc2">
-  
-      <!-- Form Inputs. Each input must have a name="" attribute -->
-      <label for="name">Name</label>
-      <input type="text" name="name" required>
-      <label for="email">Email</label>
-      <input type="email" name="email" required>
-      <label for="message">Your Message</label>
-      <textarea name="message" required></textarea>
-  
-      <!-- hCaptcha Spam Protection -->
-      <div class="h-captcha" data-captcha="true"></div>
-  
-      <button type="submit">Submit Form</button>
-  
-  </form>
-  <!-- Required for hCaptcha -->
-  <script src="https://web3forms.com/client/script.js" async defer></script>
-
    
+    <form action="contact">
+      <h2>Get in Touch!</h2>
+    <hr>
+      <label for="fname">Full name:</label>
+      <input type="text" id="fname" name="fname" value="" placeholder="John Doe">
+      <label for="number">Phone number:</label>
+      <input type="text" id="number" name="number" value="" placeholder="079 252 6339">
+      <label for="fname">More info & any questions:</label>
+      <textarea name="message" id="message" style="height:197px" style="width:359px" placeholder="Write something here..."></textarea>  
+      <input type="submit" value="Submit">
+  </form> 
+   <!-- <form action=""> --> 
+    
+    </div>  <br><br>
 
     <!--location map-->
     <h2>Our Location</h2>
@@ -317,9 +323,11 @@ function topFunction() {
      <footer class="footerletter">
       <form>
           <label for="Email">Get our Newsletter</label>
-          <input type="email" placeholder="Enter your email">
-          <a href="subscribe.html"><button>Subscribe</button></a>
-          </form>
+          <input type="subscribe-email" placeholder="Enter your email">
+          <div class="subscribe button">
+          <button id="subscribe-button">Subscribe</button>
+          </div>
+       </form>
 
           <p>&copy; 2024 Motion Magic Studios. All rights reserved.</p>
           
