@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -222,70 +222,75 @@ function topFunction() {
       </div>
   </section>
 
-    <!-- Services section -->
-    <section id="services">
-      <h2 id="Services">Our Services</h2>
+    <!--Pricing and  Services section -->
+   
+    <div class="pricing-section">
+      <h2><u>Our Pricing and Services</u></h2>
+      
+<div class="note">
+  <p><u>You can make use of digital calculator for your accuracy!!!</u></p>
+</div>
+      <div class="pricing-card">
+        <h3><strong><u>weddings</u></h3>
+        <p><strong>R 1500</strong></p>
+        <ul>
+          <li><strong>15 Edited Photos</strong></li>
+          <li><strong>4 Hour Session</strong></li>
+          <li><strong>Video Record Included</strong></li>
+        </ul>
+        <a href="bookings.html" class="btn">Book Now</a>
+      </div>
+      <div class="pricing-card">
+        <h3><u>Graduations</u></h3>
+        <p><strong>R 650</strong></p>
+        <ul>
+          <li>10 Edited Photos</li>
+          <li>2 Hour Session</li>
+          <li>Prints Included</li>
+        </ul>
+        <a href="bookings.html" class="btn">Book Now</a>
+      </div>
+      <div class="pricing-card">
+        <h3><strong><u>Birthdays</u></strong></h3>
+        <p>R850</p>
+        <ul>
+          <li>20 Edited Photos</li>
+          <li>2 Hour Session</li>
+          <li>Album Included</li>
+          <li>Video Record Included</li>
+        </ul>
+        <a href="bookings.html" class="btn">Book Now</a>
 
-    <p>Choose from a wide range of services. </p>
 
-    <h3>Birthdays</h3>
-    <a href="bookings.html"><img src="src/Images/birthday image.jpeg" width="500" height="500" alt="photography-img"></a>
+    </div>
 
-    <table>
-        <tr>
-          <th>Package 1</th>
-          <th>Package 2</th> 
-        </tr>
-        <tr>
-          <td>2 Hours <br>
-              50 Pictures <br>
-              R1500
-          </td> <br><br>
-          <td>5 Hours <br>
-              100 pictures  <br>
-              R4500
-        </td>
-        </tr>
-      </table>
+   
+      <div class="pricing-card">
+    <div class="calculator">
+      <!-- <p><u>Calculator</u></p> -->
+      <input type="text" id="display" readonly>
+      <div class="buttons">
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('*')">X</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="appendToDisplay('/')">%</button>
+      </div>
+    </div>
+  </div>
 
-    <h3>Weddings</h3>
-    <a href="bookings.html"><img src="src/Images/wedding image.jpg" width="500" height="500" alt="photography-img"></a>
-    <table>
-        <tr>
-          <th>Package 1</th>
-          <th>Package 2</th> 
-        </tr>
-        <tr>
-          <td>2 Hours <br>
-              50 Pictures <br>
-              R5000
-          </td> <br><br>
-          <td>5 Hours <br>
-              100 pictures  <br>
-              R10000
-        </td>
-        </tr>
-      </table>
-    <h3>Graduations</h3>
-    <a href="bookings.html"><img src="src/Images/graduation image.jpg" width="500" height="500" alt="photography-img"></a>
-    <table>
-        <tr>
-          <th>Package 1</th>
-          <th>Package 2</th> 
-        </tr>
-        <tr>
-          <td>2 Hours <br>
-              50 Pictures <br>
-              R1000
-          </td> <br><br>
-          <td>5 Hours <br>
-              100 pictures  <br>
-              R2500
-        </td>
-        </tr>
-      </table> <br><br>
-
-    </section>
 
     <!-- Contact section -->
     <section id="contact">
