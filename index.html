@@ -296,15 +296,18 @@ function topFunction() {
   <div class="contact">
 
    
-    <form action="contact">
+    <form action="https://api.web3forms.com/submit" method="POST">
       <h2>Get in Touch!</h2>
     <hr>
+      <input type="hidden" name="access_key" value="7290d954-e99f-487b-89ec-a0c698dd7bc2">
       <label for="fname">Full name:</label>
       <input type="text" id="fname" name="fname" value="" placeholder="John Doe">
       <label for="number">Phone number:</label>
       <input type="text" id="number" name="number" value="" placeholder="079 252 6339">
       <label for="fname">More info & any questions:</label>
       <textarea name="message" id="message" style="height:197px" style="width:359px" placeholder="Write something here..."></textarea>  
+      <!-- hCaptcha Spam Protection -->
+    <div class="h-captcha" data-captcha="true"></div>
       <input type="submit" value="Submit">
   </form> 
    <!-- <form action=""> --> 
@@ -337,6 +340,7 @@ function topFunction() {
         <a href="tel:+27672150419"><i class="fa fa-phone" aria-hidden="true"></i></a>   &nbsp; &nbsp;
         <a href="mailto:siyamthandagxowa@capacit.org.za"><i class="fa fa-envelope" aria-hidden="true"></i></a>   &nbsp; &nbsp;
     </footer>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 
 </html>
