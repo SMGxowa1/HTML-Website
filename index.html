@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
-</head>
-
 <body> 
   <style>
     #myBtn {
@@ -52,7 +50,7 @@
 
 
 <nav>
-    <ul class="container">
+    <ul class="nav-container">
         <img src="src/Images/logo picture.PNG" alt="motion_magic_logo" id="logo">
         <li class="links"> <a href="">Home</a> &nbsp; &nbsp;</li>
         <li class="links"> <a href="#about">About</a> &nbsp; &nbsp;</li>
@@ -80,14 +78,15 @@
 </p>  -->
 <!--Landing page images-->
 <div class="home-imgs">
-    <img src="src/Images/Pic 1.jpg" width="405" height="300" alt="photography-img">
+  <p><strong>OUR WORK</strong></p>
+    <img src="src/Images/Pic 1.jpg" width="410" height="310" alt="photography-img">
     <img src="src/Images/Pic 2.jpg" width="405" height="300" alt="photography-img">
     <img src="src/Images/Pic 3.jpg" width="405" height="300" alt="photography-img">
     <!-- <img src="src/Images/Pic 4.jpg" width="410" height="308" alt="photography-img">
     <img src="src/Images/picture5.jpeg" width="410" height="308" alt="photography-img">
     <img src="src/Images/Photo.jpg" width="410" height="308" alt="photography-img"><br><br> -->
 </div>
-</main><br><br><br><br>
+ </main>    <br><br><br><br> 
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
@@ -111,30 +110,118 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+//Calculator
+function appendToDisplay(value) {
+  document.getElementById('display').value += value;
+}
+
+function clearDisplay() {
+  document.getElementById('display').value = '';
+}
+
+function calculate() {
+  try {
+    const result = eval(document.getElementById('display').value);
+    document.getElementById('display').value = result;
+  } catch (error) {
+    document.getElementById('display').value = 'Error';
+  }
+}
 </script>
 
     <!-- About section -->
-    <section id="about">
-      <div class="about-info">
+   
 
-        <h1 class="about-heading">About Us</h1>
-        <h3>Vision</h3>
-      
-        <p>At Motion Magic Studios, our vision is to be the unrivaled architects of visual storytelling, transcending the ordinary and sculpting moments that endure through time. Since our inception in 2010 by Cache Crusaders, we have evolved into one of Cape Town's foremost photography businesses. Our expansive team, comprising highly specialized videographers, photographers, and editors, collaborates seamlessly to weave narratives that resonate with authenticity. </p>
-      
-        <h3>Mission</h3>
-      
-        <p>Our mission is to provide an enjoyable experience in front of the camera as well as timeless photographs that you will treasure for a lifetime.  
-      
-        </p>
-      </div>
-      
+      <main>
+        <section>
+            <h2>About us</h2>
+            <p>We love photography because there is potential to grow every day you go to work. <br>We love the opportunity to end a day feeling more skilled and better prepared than when I woke up in the morning.</p>
+            <a>
+                <img src="src\Images\about3.jpg" alt="" width="400" height="300">
+            </a>
+        </section>
+      <section>
+        <h2>Mission</h2>
+        <p>Our mission is to provide an enjoyable experience in front of the camera as well as timeless photographs that you will treasure for a lifetime.</p>
+        <a>
+           <img src="src\Images\about1.jpg" alt="About us" width ="400" height="300">
+           <!-- <img src="imgs\wedding_P5a_720x350.jpg.img.jpg" alt="about us" width = "410" height="300"> -->
+        </a>
+    </section>
+  
+    <section>
+        <h2>Goal</h2>
+        <p>Our aim is to capture moments on film and use images to tell stories, creating visual narratives that evoke emotions and convey messages.</p>
+        <!-- <p>Our purpose is to communicate and document moments in time. A photo freezes a moment, which leads to a story of the person, environment, animal, or landscape.<br> Studies show that taking pictures improves your visual memory of an experience.</p> -->
+        <a >
+            <img src="src/Images/about2.jpg" alt=" Our mission" width="400" height="300">
+            <!-- <img src="imgs\Photography.jfif" alt="our mission" width="400" height="300"> -->
+        </a>
+       
+    </section>
+  </main>
+
 
       <!--Team members-->
           <h3>Meet the Team</h3>
 
+          <div class="row" style="font-size: 12px">
+            <div class="column">
+              <div class="card" >
+                <img src="src\Images\Yanelisa.png" alt="Yanelisa" style="width:30%" >
+                <div class="container">
+                  <h2>Yanelisa Vuza</h2>
+                  <p class="title">CEO & Founder</p>
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <p>yanelisa.vuza@capaciti.org.za</p>
+                  <p><button class="tmbutton">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="src\Images\Siyamthanda.jpg" alt="Siyamthanda" style="width:30%">
+                <div class="container">
+                  <h2>Siyamthanda Gxowa</h2>
+                  <p class="title">Art Director</p>
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <p>siyamthanda.gxowa@capaciti.org.za</p>
+                  <p><button class="tmbutton">Contact</button></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <img src="src\Images\Chulumanco.jpeg" alt="Chulumanco" style="width:30%">
+                <div class="container">
+                  <h2>Chulumanco Ndela</h2>
+                  <p class="title">Videographer</p>
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <p>chulumanco.ndela@capaciti.org.za</p>
+                  <p><button class="tmbutton">Contact</button></p>
+                </div>
+              </div>
+            </div>
 
-          <div class="container-members">
+            <div class="column">
+              <div class="card">
+                <img src="src\Images\Aphiwe.jpeg" alt="Aphiwe" style="width:30%">
+                <div class="container">
+                  <h2>Aphiwe Skeyi</h2>
+                  <p class="title">Photographer & editor</p>
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <p>aphiwe.keyi@capaciti,rg.za</p>
+                  <p><button class="tmbutton">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <!--<div class="container-members">
             <div>
               <div class="content">
                 <h2>Siyamthanda Gxowa</h2>
@@ -159,7 +246,7 @@ function topFunction() {
                 <span>Editor</span>
               </div>
             </div>
-          </div> 
+          </div> -->
       
     </section>
 
@@ -222,70 +309,76 @@ function topFunction() {
       </div>
   </section>
 
-    <!-- Services section -->
-    <section id="services">
-      <h2 id="Services">Our Services</h2>
-
-    <p>Choose from a wide range of services. </p>
-
-    <h3>Birthdays</h3>
-    <a href="bookings.html"><img src="src/Images/birthday image.jpeg" width="500" height="500" alt="photography-img"></a>
-
-    <table>
-        <tr>
-          <th>Package 1</th>
-          <th>Package 2</th> 
-        </tr>
-        <tr>
-          <td>2 Hours <br>
-              50 Pictures <br>
-              R1500
-          </td> <br><br>
-          <td>5 Hours <br>
-              100 pictures  <br>
-              R4500
-        </td>
-        </tr>
-      </table>
-
-    <h3>Weddings</h3>
-    <a href="bookings.html"><img src="src/Images/wedding image.jpg" width="500" height="500" alt="photography-img"></a>
-    <table>
-        <tr>
-          <th>Package 1</th>
-          <th>Package 2</th> 
-        </tr>
-        <tr>
-          <td>2 Hours <br>
-              50 Pictures <br>
-              R5000
-          </td> <br><br>
-          <td>5 Hours <br>
-              100 pictures  <br>
-              R10000
-        </td>
-        </tr>
-      </table>
-    <h3>Graduations</h3>
-    <a href="bookings.html"><img src="src/Images/graduation image.jpg" width="500" height="500" alt="photography-img"></a>
-    <table>
-        <tr>
-          <th>Package 1</th>
-          <th>Package 2</th> 
-        </tr>
-        <tr>
-          <td>2 Hours <br>
-              50 Pictures <br>
-              R1000
-          </td> <br><br>
-          <td>5 Hours <br>
-              100 pictures  <br>
-              R2500
-        </td>
-        </tr>
-      </table> <br><br>
-
-    </section>
+    <!--Pricing and  Services section -->
+   
+    <div class="pricing-section">
+      <h2><u>Our Pricing and Services</u></h2>
+      
+<div class="note">
+  <p><strong>NOTE: </strong><u>You can make use of digital calculator for your accuracy!!!</u></p>
+</div>
+      <div class="pricing-card">
+        <h3><strong><u>weddings</u></h3>
+        <p><strong>R 1500</strong></p>
+        <ul>
+          <li><strong>15 Edited Photos</strong></li>
+          <li><strong>4 Hour Session</strong></li>
+          <li><strong>Video Record Included</strong></li>
+        </ul>
+        <a href="bookings.html" class="btn">Book Now</a>
+      </div>
+      <div class="pricing-card">
+        <h3><u>Graduations</u></h3>
+        <p><strong>R 650</strong></p>
+        <ul>
+          <li>10 Edited Photos</li>
+          <li>2 Hour Session</li>
+          <li>Prints Included</li>
+        </ul>
+        <a href="bookings.html" class="btn">Book Now</a>
+      </div>
+      <div class="pricing-card">
+        <h3><strong><u>Birthdays</u></strong></h3>
+        <p>R850</p>
+        <ul>
+          <li>20 Edited Photos</li>
+          <li>2 Hour Session</li>
+          <li>Album Included</li>
+          <li>Video Record Included</li>
+        </ul>
+        <a href="bookings.html" class="btn">Book Now</a>
+    </div>
+    <section id="map">
+      <h2>Digital Calculator</h2>
+      <a href="https://culu.netlify.app/">Open Calculator</a>
+  </section>
+<!--    
+      <div class="pricing-card">
+    <div class="calculator">
+       <p><u>Calculator</u></p> 
+      <input type="text" id="display" readonly>
+      <div class="buttons">
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('*')">X</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="appendToDisplay('/')">%</button>
+      </div>
+    </div>
+  </div>
+ -->
 
     <!-- Contact section -->
     <section id="contact">
@@ -296,7 +389,7 @@ function topFunction() {
   <div class="contact">
 
    
-    <form action="https://api.web3forms.com/submit" method="POST">
+    <form action="contact">
       <h2>Get in Touch!</h2>
     <hr>
       <input type="hidden" name="access_key" value="7290d954-e99f-487b-89ec-a0c698dd7bc2">
@@ -324,7 +417,7 @@ function topFunction() {
 
      <!--Footer-->
      <footer class="footerletter">
-      <form>
+      <form action="newsletter">
           <label for="Email">Get our Newsletter</label>
           <input type="subscribe-email" placeholder="Enter your email">
           <div class="subscribe button">
