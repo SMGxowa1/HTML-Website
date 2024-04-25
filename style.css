@@ -202,7 +202,7 @@ a, a:visited, a:hover, a:active {
   width:70px;
   height: 60px;
 }
-.container{
+.nav-container{
   list-style: none;
   display: flex;
 }
@@ -448,7 +448,9 @@ input:checked + .slide-container .nav label { display: block; }
 
 
 /* About info */
-.about-info{
+/* Team members section*/
+
+/*.about-info{
   letter-spacing: 0.10em;
 }
 .container-members {
@@ -458,7 +460,7 @@ input:checked + .slide-container .nav label { display: block; }
   height: 500px;
   gap: 10px;
 
-  > div {
+   div {
     flex: 0 0 120px;
     border-radius: 0.5rem;
     transition: 0.5s ease-in-out;
@@ -483,48 +485,64 @@ input:checked + .slide-container .nav label { display: block; }
       background: url("./src/Images/Editor.jpg")
         no-repeat 50% / cover;
     }
-
-    .content {
-      font-size: 1.5rem;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      padding: 2px;
-      opacity: 0;
-      flex-direction: column;
-      height: 100%;
-      justify-content: flex-end;
-      background: rgb(0, 0, 0);
-      background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.676) 0%,
-        rgba(0, 0, 0, 0) 100%);
-      }
-    
-
-      transform: translatey(100%);
-      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
-      visibility: hidden;
-
-      span {
-        display: block;
-        margin-top: 5px;
-        font-size: 1.2rem;
-      }
-    }
-
-    &:hover {
-      flex: 0 0 250px;
-      box-shadow: 1px 3px 15px #222222;
-      transform: translatey(-30px);
-    }
-
-    &:hover .content {
-      opacity: 1;
-      transform: translatey(0%);
-      visibility: visible;
-    }
   }
+}*/
+
+
+
+.column {
+  
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  font-size: 12px;
+}
+
+.title {
+  color: grey;
+}
+
+.tmbutton {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
 
 
 
@@ -572,7 +590,7 @@ input[type="date"],
 input[type="time"],
 
  textarea {
-width: 100%; 
+  width: 100%; 
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -671,6 +689,14 @@ input.button:hover {
   width: 80px;
   height: 30px;
 }
+
+.newsletter{
+  input{
+    text-align:center;
+    width: 80px;
+    height: 30px;
+}
+}
 /* Services section */
 table{
   display:inline;
@@ -679,109 +705,10 @@ th img{
   display: inline-block;
   border:  10px solid black;
 }
-
+}
 /* Footer Section */
 /* footer.footerletter{
   background: #09C;
 
 } */
 
-/* Checkout Page */
-
-.checkout{
-  box-sizing: border-box;
-}
-
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap; 
-  flex-wrap: wrap;
-  margin: 0 -16px;
-}
-
-.col-25 {
-  -ms-flex: 25%; 
-  flex: 25%;
-}
-
-.col-50 {
-  -ms-flex: 50%; 
-  flex: 50%;
-}
-
-.col-75 {
-  -ms-flex: 75%; 
-  flex: 75%;
-}
-
-.col-25,
-.col-50,
-.col-75 {
-  padding: 0 16px;
-}
-
-.container {
-  background-color: #f2f2f2;
-  padding: 5px 20px 15px 20px;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
-}
-
-.check-input {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-label {
-  margin-bottom: 10px;
-  display: block;
-}
-
-.icon-container {
-  margin-bottom: 20px;
-  padding: 7px 0;
-  font-size: 24px;
-}
-
-.btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 22px;
-  margin: 10px 0;
-  border: none;
-  width: 100%;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 17px;
-}
-
-.btn:hover {
-  background-color: #45a049;
-}
-
-a {
-  color: #2196F3;
-}
-
-hr {
-  border: 1px solid lightgrey;
-}
-
-span.price {
-  float: right;
-  color: grey;
-}
-
-/* Responsive layout */
-@media (max-width: 800px) {
-  .row {
-    flex-direction: column-reverse;
-  }
-  .col-25 {
-    margin-bottom: 20px;
-  }
-}
