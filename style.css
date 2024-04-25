@@ -177,9 +177,9 @@ nav{
   transition: background-color 0.3s ease;
   
 }
-a, a:visited, a:hover, a:active {
+/*a, a:visited, a:hover, a:active {
   color: inherit;
-  }
+  }*/
 
 .nav ul{
   margin: 0;
@@ -223,14 +223,14 @@ a:after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #14253b;
+  /*background: #14253b;*/
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after { 
+/*a:hover:after { 
   width: 100%; 
   left: 0; 
-}
+}*/
 img{
   border-radius: 60%;
   width: 25%;
@@ -487,9 +487,9 @@ input:checked + .slide-container .nav label { display: block; }
   width: 100%;
 }
 
-.button:hover {
+/*.button:hover {
   background-color: #555;
-}
+}*/
 
 
 
