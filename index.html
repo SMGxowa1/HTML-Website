@@ -57,7 +57,7 @@
         <li class="links"> <a href="#about">About</a> &nbsp; &nbsp;</li>
         <li class="links"><a href="#pricing-section">Services</a> &nbsp; &nbsp; </li>
         <li class="links"><a href="#contact">Contact</a> &nbsp; &nbsp; </li>
-        <li class="link"><a href="login.html">Login<i class="fa-solid fa-user"></i></a></li>
+        <li class="link"><a href="login.html">Login &nbsp;<i class="fa-solid fa-user"></i></a></li>
     </ul>
 </nav>
 
@@ -92,7 +92,7 @@
 </div>
  </main>    <br><br><br><br> 
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
 <script>
 // Get the button
@@ -143,7 +143,7 @@ function redirectToHomePage() {
    
 
       <main>
-        <section>
+        <section id="about">
             <h2>About us</h2>
             <p>We love photography because there is potential to grow every day you go to work. <br>We love the opportunity to end a day feeling more skilled and better prepared than when I woke up in the morning.</p>
             <a>
@@ -173,7 +173,7 @@ function redirectToHomePage() {
 
 
       <!--Team members-->
-          <h3>Meet the Team</h3>
+          <h2 style="margin-bottom: 20px;">Meet the Team</h2>
 
           <div class="row" style="font-size: 12px">
             <div class="column">
@@ -191,7 +191,7 @@ function redirectToHomePage() {
           
             <div class="column">
               <div class="card">
-                <img src="src\Images\Siyamthanda.jpg" alt="Siyamthanda" style="width:30%">
+                <img src="src\Images\Siyamthanda.jpg" alt="Siyamthanda" style="width:30%" >
                 <div class="container">
                   <h2>Siyamthanda Gxowa</h2>
                   <p class="title">Art Director</p>
@@ -204,7 +204,7 @@ function redirectToHomePage() {
             
             <div class="column">
               <div class="card">
-                <img src="src\Images\Chulumanco.jpeg" alt="Chulumanco" style="width:30%">
+                <img src="src\Images\Chulumanco.jpeg" alt="Chulumanco" style="width:30%" >
                 <div class="container">
                   <h2>Chulumanco Ndela</h2>
                   <p class="title">Videographer</p>
@@ -231,72 +231,145 @@ function redirectToHomePage() {
     </section>
 
          <!--Reviews section-->
-     <section class="reviews">
-      <h3><b>What Our Customers say</b></h3>
-     
-        <div class="carousel">
-          <ul class="slides">
-            <input type="radio" name="radio-buttons" id="img-1" checked />
-            <li class="slide-container">
-              <div class="slide-image">
-                <img src="src\Images\review_img.jpg">
+        <!--Testimonials------------------->
+    <section id="testimonials">
+      <!--heading--->
+      <div class="testimonial-heading">
+          <h2>Clients Says</h2>
+      </div>
+      <!--testimonials-box-container------>
+      <div class="testimonial-box-container">
+          <!--BOX-1-------------->
+          <div class="testimonial-box">
+              <!--top------------------------->
+              <div class="box-top">
+                  <!--profile----->
+                  <div class="profile">
+                      <!--img---->
+                      <div class="profile-img">
+                          <img src="src\Images\random_profile_pic.png" />
+                      </div>
+                      <!--name-and-username-->
+                      <div class="name-user">
+                          <strong>Touseeq Ijaz</strong>
+                          <span>@touseeqijazweb</span>
+                      </div>
+                  </div>
+                  <!--reviews------>
+                  <div class="reviews">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i><!--Empty star-->
+                  </div>
               </div>
-              <div class="carousel-controls">
-                <label for="img-3" class="prev-slide">
-                  <span>&lsaquo;</span>
-                </label>
-                <label for="img-2" class="next-slide">
-                  <span>&rsaquo;</span>
-                </label>
+              <!--Comments---------------------------------------->
+              <div class="client-comment">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
               </div>
-            </li>
-
-            <input type="radio" name="radio-buttons" id="img-2" />
-            <li class="slide-container">
-              <div class="slide-image">
-                <img src="src\Images\review_img1.jpg">
+          </div>
+          <!--BOX-2-------------->
+          <div class="testimonial-box">
+              <!--top------------------------->
+              <div class="box-top">
+                  <!--profile----->
+                  <div class="profile">
+                      <!--img---->
+                      <div class="profile-img">
+                          <img src="src\Images\random_profile_pic.png" />
+                      </div>
+                      <!--name-and-username-->
+                      <div class="name-user">
+                          <strong>J.K Rowling</strong>
+                          <span>@jkrowling</span>
+                      </div>
+                  </div>
+                  <!--reviews------>
+                  <div class="reviews">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i><!--Empty star-->
+                  </div>
               </div>
-              <div class="carousel-controls">
-                <label for="img-1" class="prev-slide">
-                  <span>&lsaquo;</span>
-                </label>
-                <label for="img-3" class="next-slide">
-                  <span>&rsaquo;</span>
-                </label>
+              <!--Comments---------------------------------------->
+              <div class="client-comment">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
               </div>
-            </li>
-            <input type="radio" name="radio-buttons" id="img-3" />
-            <li class="slide-container">
-              <div class="slide-image">
-                <img src="src\Images\review_img2.jpg">
+          </div>
+          <!--BOX-3-------------->
+          <div class="testimonial-box">
+              <!--top------------------------->
+              <div class="box-top">
+                  <!--profile----->
+                  <div class="profile">
+                      <!--img---->
+                      <div class="profile-img">
+                          <img src="src\Images\random_profile_pic.png" />
+                      </div>
+                      <!--name-and-username-->
+                      <div class="name-user">
+                          <strong>Harry Potter</strong>
+                          <span>@DanielRedclief</span>
+                      </div>
+                  </div>
+                  <!--reviews------>
+                  <div class="reviews">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i><!--Empty star-->
+                  </div>
               </div>
-              <div class="carousel-controls">
-                <label for="img-2" class="prev-slide">
-                  <span>&lsaquo;</span>
-                </label>
-                <label for="img-1" class="next-slide">
-                  <span>&rsaquo;</span>
-                </label>
+              <!--Comments---------------------------------------->
+              <div class="client-comment">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
               </div>
-            </li>
-            <div class="carousel-dots">
-              <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-              <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-              <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
-            </div>
-          </ul>
-        </div>
+          </div>
+          <!--BOX-4-------------->
+          <div class="testimonial-box">
+              <!--top------------------------->
+              <div class="box-top">
+                  <!--profile----->
+                  <div class="profile">
+                      <!--img---->
+                      <div class="profile-img">
+                          <img src="src\Images\random_profile_pic.png" />
+                      </div>
+                      <!--name-and-username-->
+                      <div class="name-user">
+                          <strong>Oliva</strong>
+                          <span>@Olivaadward</span>
+                      </div>
+                  </div>
+                  <!--reviews------>
+                  <div class="reviews">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i><!--Empty star-->
+                  </div>
+              </div>
+              <!--Comments---------------------------------------->
+              <div class="client-comment">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+              </div>
+          </div>
       </div>
   </section>
 
     <!--Pricing and  Services section -->
    
-    <div class="pricing-section">
-      <h2><u>Our Pricing and Services</u></h2>
+    <div class="pricing-section" id="pricing-section">
+      <h2>Our Pricing and Services</h2>
       
-<div class="note">
+<!-- <div class="note">
   <p><strong>NOTE: </strong><u>You can make use of digital calculator for your accuracy!!!</u></p>
-</div>
+</div> -->
       <div class="pricing-card">
         <h3><strong><u>weddings</u></h3>
         <p><strong>R 1500</strong></p>
@@ -328,10 +401,11 @@ function redirectToHomePage() {
         </ul>
         <a href="bookings.html" class="btn">Book Now</a>
     </div>
-    <section id="map">
+
+    <!-- <section id="map">
       <h2>Digital Calculator</h2>
       <a href="https://culu.netlify.app/">Open Calculator</a>
-  </section>
+  </section> -->
 <!--    
       <div class="pricing-card">
     <div class="calculator">
