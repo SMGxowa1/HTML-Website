@@ -47,28 +47,42 @@
 }
   </style>
 <!--Navbar-->
+
+<section class="intro">
 <nav>
     <ul class="nav-container">
        
         <img src="src/Images/logo picture.PNG" alt="motion_magic_logo" id="logo">
         <li class="links"> <a href="">Home</a> &nbsp; &nbsp;</li>
-        <li class="links"> <a href="#about">About</a> &nbsp; &nbsp;</li>
+        <li class="links"> <a href="#about-us">About</a> &nbsp; &nbsp;</li>
         <li class="links"><a href="#pricing-section">Services</a> &nbsp; &nbsp; </li>
         <li class="links"><a href="#contact">Contact</a> &nbsp; &nbsp; </li>
         <li class="link"><a href="login.html">Login &nbsp;<i class="fa-solid fa-user"></i></a></li>
     </ul>
 </nav>
 
+<!--LANDING PAGE-->
+<section class="intro">
+  <div class="inner">
+    <div class="content">
+      <h1 class="loading-text">Motion Magic Studios</h1> <br>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a> &nbsp; &nbsp; 
+        <a href="https://www.instagram.com/motionmagicstudios__/" target="_blank"><i class="fa-brands fa-instagram"></i></a> &nbsp; &nbsp; 
+        <a href="https://twitter.com/?lang=en-za" target="_blank"><i class="fa-brands fa-x-twitter"></i></a> &nbsp; &nbsp;
+        <a href="tel:+27672150419"><i class="fa fa-phone" aria-hidden="true"></i></a>   &nbsp; &nbsp;
+        <a href="mailto:siyamthandagxowa@capacit.org.za"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
 <!--Main heading-->
 <div class = "bg"></div>
 <main class="main-section">
-<h1 class="loading-text">Welcome to Motion Magic Studios</h1> <br>
+<!--<h1 class="loading-text">Welcome to Motion Magic Studios</h1> <br>-->
 
 
-<p >Motion Magic Studios was founded by Cache Crusaders in 2010. Over the years it has grown into one of the leading photography businesses in Cape Town.
-   The company includes a varying team of videographers, photographer and editors who are highly specialized. We also have a partner network of 
-   photographers in most major cities of South Africa. 
-
+<p ></p>
+  </section><br><br><br>
    <!-- <p >Motion Magic Studios was founded by Cache Crusaders in 2010. Over the years it has grown into one of the leading photography businesses in 
     Cape Town. The company includes a varying team of videographers, photographer and editors who are highly specialized. We also have a partner network
      of photographers in most major cities of South Africa. 
@@ -78,9 +92,10 @@
 
 </p>  -->
 
+
 <!--Landing page images-->
 <div class="home-imgs">
-  <p><strong>OUR WORK</strong></p>
+  <h2><strong>OUR WORK</strong></h2>
     <img src="src/Images/Pic 1.jpg" width="410" height="310" alt="photography-img">
     <img src="src/Images/Pic 2.jpg" width="405" height="300" alt="photography-img">
     <img src="src/Images/Pic 3.jpg" width="405" height="300" alt="photography-img">
@@ -88,7 +103,7 @@
     <img src="src/Images/picture5.jpeg" width="410" height="308" alt="photography-img">
     <img src="src/Images/Photo.jpg" width="410" height="308" alt="photography-img"><br><br> -->
 </div>
- </main>    <br><br><br><br> 
+ </main>    <br>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top" style="background-color:#6CADB2 ;"><i class="fa-solid fa-arrow-up"></i></button>
 
@@ -136,6 +151,15 @@ function redirectToHomePage() {
     window.location.href = "index.html";
   }
 </script>
+  <!-- ABOUT US SECTION -->
+  <section id="about-us">
+    <section class="left-col">
+      <h2>About Us</h2>
+      <p style="text-indent: 6%">Motion Magic Studios was founded by Cache Crusaders in 2010. Over the years it has grown into one of the leading photography businesses in Cape Town.
+        The company includes a varying team of videographers, photographer and editors who are highly specialized. We also have a partner network of 
+        photographers in most major cities of South Africa.
+      </p> <br>
+
 
     <!-- About section -->
       <main>
@@ -145,30 +169,33 @@ function redirectToHomePage() {
             <a>
                 <img src="src\Images\about3.jpg" alt="" width="400" height="300">
             </a>
-        </section>
-
-      <section>
-        <h2>Mission</h2>
-        <p>Our mission is to provide an enjoyable experience in front of the camera as well as timeless photographs that you will treasure for a lifetime.</p>
-        <a>
-           <img src="src\Images\about1.jpg" alt="About us" width ="400" height="300">
-           <!-- <img src="imgs\wedding_P5a_720x350.jpg.img.jpg" alt="about us" width = "410" height="300"> -->
-        </a>
+=======
+      <p style="text-indent: 6%"> We love photography because there is potential to grow every day you go to work.
+          We love the opportunity to end a day feeling more skilled and better prepared than when I woke up in the morning.
+      </p>
     </section>
-  
-    <section>
-        <h2>Goal</h2>
-        <p>Our aim is to capture moments on film and use images to tell stories, creating visual narratives that evoke emotions and convey messages.</p>
-        <!-- <p>Our purpose is to communicate and document moments in time. A photo freezes a moment, which leads to a story of the person, environment, animal, or landscape.<br> Studies show that taking pictures improves your visual memory of an experience.</p> -->
-        <a >
-            <img src="src/Images/about2.jpg" alt=" Our mission" width="400" height="300">
-            <!-- <img src="imgs\Photography.jfif" alt="our mission" width="400" height="300"> -->
-        </a>
-    </section>
-  </main>
 
+    <section class="sidebar">
+      <h2>Mission</h2>
+        <p>Our mission is to provide an enjoyable experience in front of the camera as well as timeless
+          photographs that you will treasure for a lifetime.</p>
+
+          <h2>Goal</h2>
+        <p>Our aim is to capture moments on film and use images to tell stories, creating visual
+          narratives that evoke emotions and convey messages.</p>
+          
+          <h2>Purpose</h2>
+          <p> Our purpose is to document and communicate moments in time. A photo freezes a moment, which leads to a story of 
+          the person, environment, animal, or landscape. Studies show that taking pictures improves your visual memory of an 
+          experience.</p>
+    </section>
+</section>
+    
+    <div class="clearfix"></div>
+      
 
       <!--Team members-->
+      <section class="team">
           <h2 style="margin-bottom: 20px;">Meet the Team</h2>
 
           <div class="row" style="font-size: 12px">
@@ -227,6 +254,50 @@ function redirectToHomePage() {
           </div>
     </section>
 
+    <div class="clearfix"></div>
+
+<!--PRICING AND SERVICES SECTION -->
+<section>
+    <div class="pricing-section" id="pricing-section">
+      <h2>Our Pricing and Services</h2>
+      
+    <!-- <div class="note">
+    <p><strong>NOTE: </strong><u>You can make use of digital calculator for your accuracy!!!</u></p>
+    </div> -->
+      <div class="pricing-card">
+        <h3><strong><u>weddings</u></h3>
+        <p><strong>R 1500</strong></p>
+        <ul>
+          <li><strong>15 Edited Photos</strong></li>
+          <li><strong>4 Hour Session</strong></li>
+          <li><strong>Video Record Included</strong></li>
+        </ul>
+        <a href="bookings.html" class="btn">Book Now</a>
+      </div>
+      <div class="pricing-card">
+        <h3><u>Graduations</u></h3>
+        <p><strong>R 650</strong></p>
+        <ul>
+          <li>10 Edited Photos</li>
+          <li>2 Hour Session</li>
+          <li>Prints Included</li>
+        </ul>
+        <a href="bookings.html" class="btn">Book Now</a>
+      </div>
+      <div class="pricing-card">
+        <h3><strong><u>Birthdays</u></strong></h3>
+        <p>R850</p>
+        <ul>
+          <li>20 Edited Photos</li>
+          <li>2 Hour Session</li>
+          <li>Album Included</li>
+          <li>Video Record Included</li>
+        </ul>
+        <a href="bookings.html" class="btn">Book Now</a>
+    </div>
+</section>
+
+<div class="clearfix"></div>
          <!--Reviews section-->
         <!--Testimonials------------------->
     <section id="testimonials">
@@ -403,9 +474,7 @@ function redirectToHomePage() {
       </div>
       </div>
    </section>
-    
-   
-
+  
     <!-- Contact section -->
     <section id="contact">
       <h3> Contact Us</h3>
@@ -457,7 +526,7 @@ function redirectToHomePage() {
         <a href="https://www.instagram.com/motionmagicstudios__/" target="_blank"><i class="fa-brands fa-instagram"></i></a> &nbsp; &nbsp; 
         <a href="https://twitter.com/?lang=en-za" target="_blank"><i class="fa-brands fa-x-twitter"></i></a> &nbsp; &nbsp;
         <a href="tel:+27672150419"><i class="fa fa-phone" aria-hidden="true"></i></a>   &nbsp; &nbsp;
-        <a href="mailto:siyamthandagxowa@capacit.org.za"><i class="fa fa-envelope" aria-hidden="true"></i></a>   &nbsp; &nbsp;
+        <a href="mailto:siyamthandagxowa@capacit.org.za"><i class="fa fa-envelope" aria-hidden="true"></i></a>
     </footer>
     <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
