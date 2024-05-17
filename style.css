@@ -12,21 +12,16 @@ body{
 }
 
 /* pricing */
-
-.pricing-section {
-  max-width: 800px;
-  margin: 50px auto;
-  text-align: center;
+.allcards{
+  flex-wrap: wrap;
 }
 
 .pricing-card {
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px;
+  width: 20%;
   display: inline-block;
-  width: 200px;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 5px; 
+  margin: 2%;
 }
 
 .pricing-card h3 {
@@ -34,8 +29,8 @@ body{
 }
 
 .pricing-card p {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 20px;
+
 }
 
 .pricing-card ul {
@@ -45,11 +40,12 @@ body{
 
 .pricing-card ul li {
   margin-bottom: 5px;
+  font-size: 16px;
 }
 
 .btn {
   display: inline-block;
-  background-color: #4CAF50;
+  background-color: #6CADB2;
   color: white;
   padding: 5px 10px;
   text-decoration: none;
@@ -493,10 +489,11 @@ img:hover {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  padding: 5%;
 }
 
 .container {
-  padding: 0 16px;
 }
 
 .row{
@@ -521,7 +518,7 @@ img:hover {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  background-color: #6CADB2;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -535,11 +532,7 @@ img:hover {
 
 /* Bookings form */
 .bookings-form{
-  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-  background: linear-gradient(bottom, #cccccc, #EEEEEE 175px);
   border-radius: 50px;
-  background-color: #d1d1d1;
   padding: 40px;
   width:350px; 
   height: 800px;
@@ -598,18 +591,29 @@ button:hover {
   background-color: #6e6e6e91;
 }
 
-
+/* Location */
+.location-heading{
+  padding: 2%;
+}
 /*Footer*/
 footer{
   font-size: 10px;
+}
+input[type=subscribe-email]{
+  margin: 0 auto;
+  color: #ffffff;
+  width: 375px;
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
 /*Form frames*/
 
 .contact {
-  background: -webkit-linear-gradient(bottom, #cac5c1, #EEEEEE 175px);
-  background: -moz-linear-gradient(bottom, #d4c2b1, #ece2d5 175px);
-  background: linear-gradient(bottom, #cf9e8a, #e4c5ac 175px);
   border-radius: 50px;
  /* background-color: rgb(209, 209, 209);*/
  padding: 40px;
@@ -625,7 +629,19 @@ footer{
   margin-left: auto;
     margin-right: auto;
 }
- input {
+ input[type= submit] {
+  margin: 0 auto;
+  color: #ffffff;
+  background-color: #6CADB2;
+  width: 375px;
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+input[type= text], [type= number]{
   margin: 0 auto;
   width: 375px;
   display: block;
@@ -636,18 +652,6 @@ footer{
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
- /*button {
-  width: 100px;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  background: #09C;
-  color: #fff;
-  font-family: Tahoma, Geneva, sans-serif;
-  height: 30px;
-  border-radius: 15px;
-  border: 1p solid #999;
-}*/
 
 input.button:hover {
   background: #fff;
@@ -675,6 +679,7 @@ input.button:hover {
   text-align:center;
   width: 80px;
   height: 30px;
+  background-color: #6CADB2;
 }
 
 .newsletter{

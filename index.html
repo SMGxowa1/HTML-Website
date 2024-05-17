@@ -47,8 +47,6 @@
 }
   </style>
 <!--Navbar-->
-
-
 <nav>
     <ul class="nav-container">
        
@@ -92,7 +90,7 @@
 </div>
  </main>    <br><br><br><br> 
 
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+<button onclick="topFunction()" id="myBtn" title="Go to top" style="background-color:#6CADB2 ;"><i class="fa-solid fa-arrow-up"></i></button>
 
 <script>
 // Get the button
@@ -140,8 +138,6 @@ function redirectToHomePage() {
 </script>
 
     <!-- About section -->
-   
-
       <main>
         <section id="about">
             <h2>About us</h2>
@@ -150,6 +146,7 @@ function redirectToHomePage() {
                 <img src="src\Images\about3.jpg" alt="" width="400" height="300">
             </a>
         </section>
+
       <section>
         <h2>Mission</h2>
         <p>Our mission is to provide an enjoyable experience in front of the camera as well as timeless photographs that you will treasure for a lifetime.</p>
@@ -167,7 +164,6 @@ function redirectToHomePage() {
             <img src="src/Images/about2.jpg" alt=" Our mission" width="400" height="300">
             <!-- <img src="imgs\Photography.jfif" alt="our mission" width="400" height="300"> -->
         </a>
-       
     </section>
   </main>
 
@@ -184,7 +180,8 @@ function redirectToHomePage() {
                   <p class="title">CEO & Founder</p>
                   <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                   <p>yanelisa.vuza@capaciti.org.za</p>
-                  <p><button class="tmbutton">Contact</button></p>
+                  <p><a href="mailto:yanelisa.vuza@capaciti.org.za"><button class="tmbutton">Contact</button></a></p>
+
                 </div>
               </div>
             </div>
@@ -197,7 +194,7 @@ function redirectToHomePage() {
                   <p class="title">Art Director</p>
                   <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                   <p>siyamthanda.gxowa@capaciti.org.za</p>
-                  <p><button class="tmbutton">Contact</button></p>
+                  <p><a href="mailto:siyamthanda.gxowa@capaciti.org.za"><button class="tmbutton">Contact</button></a></p>
                 </div>
               </div>
             </div>
@@ -210,7 +207,7 @@ function redirectToHomePage() {
                   <p class="title">Videographer</p>
                   <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                   <p>chulumanco.ndela@capaciti.org.za</p>
-                  <p><button class="tmbutton">Contact</button></p>
+                  <p><a href="mailto:chulumanco.ndela@capaciti.org.za"><button class="tmbutton">Contact</button></a></p>
                 </div>
               </div>
             </div>
@@ -222,8 +219,8 @@ function redirectToHomePage() {
                   <h2>Aphiwe Skeyi</h2>
                   <p class="title">Photographer & editor</p>
                   <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>aphiwe.keyi@capaciti,rg.za</p>
-                  <p><button class="tmbutton">Contact</button></p>
+                  <p>aphiwe.keyi@capaciti.org.za</p>
+                  <p><a href="mailto:aphiwe.keyi@capaciti.org.za"><button class="tmbutton">Contact</button></a></p>
                 </div>
               </div>
             </div>
@@ -363,76 +360,51 @@ function redirectToHomePage() {
   </section>
 
     <!--Pricing and  Services section -->
-   
-    <div class="pricing-section" id="pricing-section">
+   <section id="pricing-section" style="padding: 10%;">
+    <div class="pricing-section" >
       <h2>Our Pricing and Services</h2>
       
-<!-- <div class="note">
-  <p><strong>NOTE: </strong><u>You can make use of digital calculator for your accuracy!!!</u></p>
-</div> -->
-      <div class="pricing-card">
-        <h3><strong><u>weddings</u></h3>
-        <p><strong>R 1500</strong></p>
-        <ul>
-          <li><strong>15 Edited Photos</strong></li>
-          <li><strong>4 Hour Session</strong></li>
-          <li><strong>Video Record Included</strong></li>
-        </ul>
-        <a href="bookings.html" class="btn">Book Now</a>
-      </div>
-      <div class="pricing-card">
-        <h3><u>Graduations</u></h3>
-        <p><strong>R 650</strong></p>
-        <ul>
-          <li>10 Edited Photos</li>
-          <li>2 Hour Session</li>
-          <li>Prints Included</li>
-        </ul>
-        <a href="bookings.html" class="btn">Book Now</a>
-      </div>
-      <div class="pricing-card">
-        <h3><strong><u>Birthdays</u></strong></h3>
-        <p>R850</p>
-        <ul>
-          <li>20 Edited Photos</li>
-          <li>2 Hour Session</li>
-          <li>Album Included</li>
-          <li>Video Record Included</li>
-        </ul>
-        <a href="bookings.html" class="btn">Book Now</a>
-    </div>
+      <div class="allcards">
 
-    <!-- <section id="map">
-      <h2>Digital Calculator</h2>
-      <a href="https://culu.netlify.app/">Open Calculator</a>
-  </section> -->
-<!--    
-      <div class="pricing-card">
-    <div class="calculator">
-       <p><u>Calculator</u></p> 
-      <input type="text" id="display" readonly>
-      <div class="buttons">
-        <button onclick="appendToDisplay('7')">7</button>
-        <button onclick="appendToDisplay('8')">8</button>
-        <button onclick="appendToDisplay('9')">9</button>
-        <button onclick="appendToDisplay('+')">+</button>
-        <button onclick="appendToDisplay('4')">4</button>
-        <button onclick="appendToDisplay('5')">5</button>
-        <button onclick="appendToDisplay('6')">6</button>
-        <button onclick="appendToDisplay('-')">-</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('2')">2</button>
-        <button onclick="appendToDisplay('3')">3</button>
-        <button onclick="appendToDisplay('*')">X</button>
-        <button onclick="appendToDisplay('0')">0</button>
-        <button onclick="appendToDisplay('.')">.</button>
-        <button onclick="clearDisplay()">C</button>
-        <button onclick="calculate()">=</button>
-        <button onclick="appendToDisplay('/')">%</button>
+        <div class="pricing-card">
+          <h3><strong>Weddings</h3>
+          <p><strong>R 1500</strong></p>
+          <ul>
+            <li>15 Edited Photos</li>
+            <li><strong>4 Hour Session</strong></li>
+            <li><strong>Video Record Included</strong></li>
+            <br>
+          </ul>
+          <a href="bookings.html" class="btn">Book Now</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Graduations</h3>
+          <p><strong>R 650</strong></p>
+          <ul>
+            <li>10 Edited Photos</li>
+            <li>2 Hour Session</li>
+            <li>Prints Included</li>
+            <br>
+          </ul>
+          <a href="bookings.html" class="btn">Book Now</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3><strong>Birthdays</strong></h3>
+          <p>R850</p>
+          <ul>
+            <li>20 Edited Photos</li>
+            <li>2 Hour Session</li>
+            <li>Album Included</li>
+            <li>Video Record Included</li>
+          </ul>
+          <a href="bookings.html" class="btn">Book Now</a>
       </div>
-    </div>
-  </div>
- -->
+      </div>
+   </section>
+    
+   
 
     <!-- Contact section -->
     <section id="contact">
@@ -442,10 +414,10 @@ function redirectToHomePage() {
       </p>
   <div class="contact">
 
-   
+   <!-- Contact Form -->
     <form action="https://api.web3forms.com/submit" method="POST">
-      <h2>Get in Touch!</h2>
-    <hr>
+    
+   
       <input type="hidden" name="access_key" value="7290d954-e99f-487b-89ec-a0c698dd7bc2">
       <label for="fname">Full name:</label>
       <input type="text" id="fname" name="fname" value="" placeholder="John Doe">
@@ -455,14 +427,14 @@ function redirectToHomePage() {
       <textarea name="message" id="message" style="height:197px" style="width:359px" placeholder="Write something here..."></textarea>  
       <!-- hCaptcha Spam Protection -->
     <div class="h-captcha" data-captcha="true"></div>
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit"> 
   </form> 
    <!-- <form action=""> --> 
     
     </div>  <br><br>
 
     <!--location map-->
-    <h2>Our Location</h2>
+    <h2 class="location-heading">Our Location</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.3015608334836!2d18.4606593!3d-33.933371199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d08518ba1b9%3A0x1398e85e424f762!2s97%20Durham%20Ave%2C%20Salt%20River%2C%20Cape%20Town%2C%207925!5e0!3m2!1sen!2sza!4v1708344356226!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
 
 
