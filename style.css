@@ -630,14 +630,14 @@ footer{
 /*Form frames*/
 
 .contact {
-  background: -webkit-linear-gradient(bottom, #cac5c1, #EEEEEE 175px);
+ /* background: -webkit-linear-gradient(bottom, #cac5c1, #EEEEEE 175px);
   background: -moz-linear-gradient(bottom, #d4c2b1, #ece2d5 175px);
   background: linear-gradient(bottom, #cf9e8a, #e4c5ac 175px);
   border-radius: 50px;
- /* background-color: rgb(209, 209, 209);*/
+ background-color: rgb(209, 209, 209);*/
  padding: 40px;
  width:450px; 
- height: 510px;
+ height: 600px;
  text-align: center;
  margin: 0 auto;
  line-height: 100%;
