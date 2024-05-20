@@ -52,5 +52,4 @@ To fix a bug or enhance an existing module, follow these steps:
 -[Siyamthanda](https://github.com/SMGxowa1)
 -[Aphiwe](https://github.com/AphiweSkeyi00)
 -[Yanelisa](https://github.com/Yanelisa1)
--[Anitha](https://github.com/anithasagwityi)
 -[Chulumanco](https://github.com/ChulumancoNdela)
