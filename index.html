@@ -46,6 +46,8 @@
   background-size: cover;
 }
   </style>
+
+
 <!--Navbar-->
 
 <section class="intro">
@@ -61,7 +63,7 @@
     </ul>
 </nav>
 
-<!--LANDING PAGE-->
+<!--Landing Page-->
 <section class="intro">
   <div class="inner">
     <div class="content">
@@ -107,50 +109,7 @@
 
 <button onclick="topFunction()" id="myBtn" title="Go to top" style="background-color:#6CADB2 ;"><i class="fa-solid fa-arrow-up"></i></button>
 
-<script>
-// Get the button
-let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-//Calculator
-function appendToDisplay(value) {
-  document.getElementById('display').value += value;
-}
-
-function clearDisplay() {
-  document.getElementById('display').value = '';
-}
-
-function calculate() {
-  try {
-    const result = eval(document.getElementById('display').value);
-    document.getElementById('display').value = result;
-  } catch (error) {
-    document.getElementById('display').value = 'Error';
-  }
-}
-
-function redirectToHomePage() {
-    // Redirect to the home page URL
-    window.location.href = "index.html";
-  }
-</script>
   <!-- ABOUT US SECTION -->
   <section id="about-us">
     <section class="left-col">
@@ -264,7 +223,7 @@ function redirectToHomePage() {
           <li><strong>Video Record Included</strong></li>
           <br>
         </ul>
-        <a href="bookings.html" class="btn">Book Now</a>
+        <a href="/google.html" class="btn">Book Now</a>
       </div>
 
       <div class="pricing-card">
@@ -483,8 +442,9 @@ function redirectToHomePage() {
         <a href="mailto:siyamthandagxowa@capacit.org.za"><i class="fa fa-envelope" aria-hidden="true"></i></a>
     </footer>
     <script src="https://web3forms.com/client/script.js" async defer></script>
+    <!-- JavaScript to preload high-quality images and display them after loading -->
     <script>
-      // JavaScript to preload high-quality images and display them after loading
+       
       document.addEventListener("DOMContentLoaded", function() {
         var images = document.querySelectorAll(".image");
         images.forEach(function(image) {
@@ -498,6 +458,52 @@ function redirectToHomePage() {
         });
       });
     </script>
+
+    <!-- Scroll to Top Button -->
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      
+      //Calculator
+      function appendToDisplay(value) {
+        document.getElementById('display').value += value;
+      }
+      
+      function clearDisplay() {
+        document.getElementById('display').value = '';
+      }
+      
+      function calculate() {
+        try {
+          const result = eval(document.getElementById('display').value);
+          document.getElementById('display').value = result;
+        } catch (error) {
+          document.getElementById('display').value = 'Error';
+        }
+      }
+      
+      function redirectToHomePage() {
+          // Redirect to the home page URL
+          window.location.href = "index.html";
+        }
+      </script>
 </body>
 
 </html>

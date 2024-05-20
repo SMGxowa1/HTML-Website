@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="form-wrapper">
@@ -52,13 +53,18 @@
         </div>
         
         <button><a href="index.html" class="login-button">Login</a></button>
+        <div id="firebaseui-auth-container">
+            <!-- This is where the Login ui will load -->
+          </div>
+            <!-- Firebase UI -->
+            <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+
         <div class="my-form__actions">
         <div class="my-form__row">
         <span>Don't have an account?</span>
         <a href="signup.html" title="Reset Password">
                                    Sign Up Now
         </a>
-        
         </div>
         </div>
         </form>
@@ -76,5 +82,41 @@
         </div>
         </aside> -->
         </div>
+    
+    <div id="firebaseui-auth-container">
+        <!-- This is where the Login ui will load -->
+      </div>
+      
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+  
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#config-web-app -->
+      <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+      <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyDkRTaZ8fPkeC408kqyjk8ClNQEHlajmME",
+      authDomain:"localhost:127.0.0.1:5501",
+      projectId: "motion-magic-studios-ec9d5",
+      storageBucket: "motion-magic-studios-ec9d5.appspot.com",
+      messagingSenderId: "613476097835",
+      appId: "1:613476097835:web:8288359930af5996d86f6e",
+      measurementId: "G-C4PHD4CRG3"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+  
+        
+  
+       <!-- Firebase UI -->
+      <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+      <link
+        type="text/css"
+        rel="stylesheet"
+        href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"
+      />
+      <script src="./auth.js"></script>
 </body>
 </html>
