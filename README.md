@@ -8,6 +8,9 @@ Here is a working live demo : https://motionmagicstudios.netlify.app/
 
 ## Site
 
+### Login Page:
+![login_page](https://github.com/SMGxowa1/HTML-Website/assets/160002255/67cb650e-8621-4517-9183-a0fbefdeb342)
+
 ### Landing Page:
 ![alt text](src/Images/landing_page.PNG)
 
